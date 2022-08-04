@@ -3,7 +3,7 @@ const axios = require("axios");
 async function handleMovies(req, res) {
   let { city } = req.query;
 
-  const url = `${process.env.MOVIE_API_KEY}?api_key=${process.env.MOVIE_API_KEY}&query=${city}`;
+  const url = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.MOVIE_API_KEY}&query=${city}`;
 
   const movieData = await axios.get(url);
 

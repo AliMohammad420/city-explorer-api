@@ -2,7 +2,7 @@ const axios = require("axios");
 
 async function handleWeather(req, res) {
   let { lat, lon } = req.query;
-  const url = `${process.env.WEATHER_API_KEY}?key=${process.env.WEATHER_API_KEY}&lon=${lat}&lat=${lon}`;
+  const url = `https://api.weatherbit.io/v2.0/current?key=${process.env.WEATHER_API_KEY}&lon=${lat}&lat=${lon}`;
   const weatherData = await axios.get(url);
 
   try {
