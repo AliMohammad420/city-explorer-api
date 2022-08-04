@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zaidalshibi/city-explorer-api.git"
+    "url": "git+https://github.com/Alimohammad420/city-explorer-api.git"
   },
   "author": "Zaid Alshibi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zaidalshibi/city-explorer-api/issues"
+    "url": "https://github.com/Alimohammad420/city-explorer-api/issues"
   },
-  "homepage": "https://github.com/zaidalshibi/city-explorer-api#readme",
+  "homepage": "https://github.com/Alimohammad420/city-explorer-api#readme",
   "dependencies": {
     "axios": "^0.27.2",
     "cors": "^2.8.5",
