@@ -1,15 +1,15 @@
 'use strict';
 
 class MoviesModel{
-    constructor(title,overview,average_votes,total_votes,image_url,popularity,released_on){
-    this.title=title;
-    this.overview=overview;
-    this.average_votes=average_votes;
-    this.total_votes=total_votes;
-    this.image_url=image_url;
-    this.popularity=popularity;
-    this.released_on=released_on;
-    }
+    constructor(item) {
+        this.title = item.title;
+        this.overview = item.overview;
+        this.average_votes = item.vote_average;
+        this.total_votes = item.vote_count;
+        this.image_url = `https://image.tmdb.org/t/p/w500${item.poster_path}`;
+        this.popularity = item.popularity;
+        this.released_on = item.release_date;
+      }
 }
 
 module.exports=MoviesModel;
